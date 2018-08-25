@@ -23,7 +23,7 @@ settings::settings(QWidget *parent) :QWidget(parent),ui(new Ui::settings)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/Settings.qss"));
+    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle));
 
     // set window size
     int x = static_cast<int>(Utilities::screensize().width()  * .8);
@@ -70,6 +70,7 @@ void settings::setupCoreBoxPage()
     ui->fileManger->setCurrentText(sm.getFileManager());
     ui->textEditor->setCurrentText(sm.getTextEditor());
     ui->imageViewer->setCurrentText(sm.getImageViewer());
+    ui->imageEditor->setCurrentText(sm.getImageEditor());
 }
 
 void settings::setupCoreActionPage()
@@ -352,6 +353,7 @@ void settings::on_ok_clicked()
     sm.setTextEditor(ui->textEditor->currentText());
     sm.setImageViewer(ui->imageViewer->currentText());
     sm.setFileManager(ui->fileManger->currentText());
+    sm.setImageEditor(ui->imageEditor->currentText());
 
     //corefm
 //    if (ui->setDefaultApp->isChecked()) {
@@ -476,7 +478,7 @@ void settings::on_restore_clicked()
                 QString msg = QString("There are old settings file\nDo you want to delete them?");
                 QMessageBox message(QMessageBox::Question, "File Exists", msg, QMessageBox::Yes | QMessageBox::No, this);
                 message.setWindowIcon(QIcon(":/app/icons/app-icons/CoreRenemer.svg"));
-                message.setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/Dialog.qss"));
+                message.setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::DialogStyle));
 
                 int reply = message.exec();
 
