@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>880</width>
-    <height>689</height>
+    <height>722</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -808,57 +808,57 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
-              <string>atom</string>
+              <string>Atom</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>gedit</string>
+              <string>Gedit</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>mousepad</string>
+              <string>Mousepad</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>kate</string>
+              <string>Kate</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>kwrite</string>
+              <string>Kwrite</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>gedit</string>
+              <string>Gedit</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>deepin-editor</string>
+              <string>Deepin-Editor</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>leafpad</string>
+              <string>Leafpad</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>l3afpad</string>
+              <string>L3afpad</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>notepadqq</string>
+              <string>Notepadqq</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>pluma</string>
+              <string>Pluma</string>
              </property>
             </item>
            </widget>
@@ -879,37 +879,37 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
-              <string>dolphin</string>
+              <string>Dolphin</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>nemo</string>
+              <string>Nemo</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>nautilus</string>
+              <string>Nautilus</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>newbreeze</string>
+              <string>NewBreeze</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>pcmanfm</string>
+              <string>PcmanFM</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>pcmanfm-qt</string>
+              <string>PcmanFM-qt</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>thunar</string>
+              <string>Thunar</string>
              </property>
             </item>
            </widget>
@@ -935,57 +935,57 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
-              <string>eterm</string>
+              <string>Eterm</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>gnome-terminal</string>
+              <string>Gnome-Terminal</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>konsole</string>
+              <string>Konsole</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>mate-terminal</string>
+              <string>Mate-Terminal</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>lxterminal</string>
+              <string>Lxterminal</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>rxvt</string>
+              <string>Rxvt</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>terminator</string>
+              <string>Terminator</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>urxvt</string>
+              <string>Urxvt</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>uxterm</string>
+              <string>Uxterm</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>xterm</string>
+              <string>Xterm</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>xfce4-terminal</string>
+              <string>Xfce4-Terminal</string>
              </property>
             </item>
            </widget>
@@ -1006,6 +1006,11 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
+              <string>Viewnior</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
               <string>eom</string>
              </property>
             </item>
@@ -1016,22 +1021,22 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
-              <string>gwenview</string>
+              <string>Gwenview</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>gpicview</string>
+              <string>Gpicview</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>lximage-qt</string>
+              <string>Lximage-qt</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>ristretto</string>
+              <string>Ristretto</string>
              </property>
             </item>
            </widget>
@@ -1075,17 +1080,17 @@ padding: 3px 10px 3px 10px;
             </item>
             <item>
              <property name="text">
-              <string>inkscape</string>
+              <string>Inkscape</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>krita</string>
+              <string>Krita</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>gimp</string>
+              <string>Gimp</string>
              </property>
             </item>
            </widget>
@@ -1095,6 +1100,93 @@ padding: 3px 10px 3px 10px;
             <property name="text">
              <string>Image Editor</string>
             </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>PDF Viewer</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Media Palyer</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QComboBox" name="pdfviewer">
+            <item>
+             <property name="text">
+              <string>CorePdf</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Okular</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Evince</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Xpdf</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QComboBox" name="mediaPlayer">
+            <item>
+             <property name="text">
+              <string>CorePlayer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Baka-Mplayer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Deepin-Movie</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gnome-Mplayer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gnome-Mpv</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Kmplayer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Mpv</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Player</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Vlc</string>
+             </property>
+            </item>
            </widget>
           </item>
          </layout>
@@ -1409,8 +1501,8 @@ padding: 3px 10px 3px 10px;
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-169</y>
-            <width>620</width>
+            <y>0</y>
+            <width>284</width>
             <height>758</height>
            </rect>
           </property>

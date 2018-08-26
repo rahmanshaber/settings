@@ -49,7 +49,6 @@ void settings::setupCoreBoxPage()
     ui->isRecentDisable->setChecked(sm.getDisableRecent());
 
     // looks & feel
-    QString currentTheme = sm.getThemeName();
     QDirIterator it("/usr/share/icons", QDir::Dirs | QDir::NoDotAndDotDot);
     QStringList iconThemes;
     while (it.hasNext()) {
@@ -57,7 +56,7 @@ void settings::setupCoreBoxPage()
       iconThemes.append(it.fileName());
     }
     ui->cmbIconTheme->addItems(iconThemes);
-    ui->cmbIconTheme->setCurrentText(currentTheme);
+    ui->cmbIconTheme->setCurrentText(sm.getThemeName());
 
     ui->cmbStyleTheme->addItem("Dark");
     ui->cmbStyleTheme->addItem("Light");
@@ -66,11 +65,13 @@ void settings::setupCoreBoxPage()
     ui->addShadow->setChecked(sm.getAddShadow());
 
     // Preferred Applications
-    ui->terminals->setCurrentText(sm.getTerminal());
+    ui->terminals->setCurrentText(sm.getTerminal().toLower());
     ui->fileManger->setCurrentText(sm.getFileManager());
     ui->textEditor->setCurrentText(sm.getTextEditor());
     ui->imageViewer->setCurrentText(sm.getImageViewer());
     ui->imageEditor->setCurrentText(sm.getImageEditor());
+    ui->pdfviewer->setCurrentText(sm.getPDFVierwer());
+    ui->mediaPlayer->setCurrentText(sm.getMediaPlayer());
 }
 
 void settings::setupCoreActionPage()
@@ -344,7 +345,7 @@ void settings::on_ok_clicked()
         QFile f(QDir::homePath() + "/.config/coreBox/RecentActivity");
         f.remove();
     }
-    sm.setThemeName(ui->cmbIconTheme->currentText());
+    sm.setThemeName(ui->cmbIconTheme->currentText());qDebug()<< ui->cmbIconTheme->currentText();
     if(ui->isRecentDisable->isChecked() == false){sm.cSetting->remove("Recent");};
     sm.setStyleMode(ui->cmbStyleTheme->currentIndex() ? true :false );
     sm.setFontStyle(ui->cmbFontStyle->currentText());
@@ -354,6 +355,8 @@ void settings::on_ok_clicked()
     sm.setImageViewer(ui->imageViewer->currentText());
     sm.setFileManager(ui->fileManger->currentText());
     sm.setImageEditor(ui->imageEditor->currentText());
+    sm.setMediaPlayer(ui->mediaPlayer->currentText());
+    sm.setPDFVierwer(ui->pdfviewer->currentText());
 
     //corefm
 //    if (ui->setDefaultApp->isChecked()) {
