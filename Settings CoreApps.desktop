@@ -2,7 +2,7 @@
 Name=Settings CoreApps
 Comment=Settings is for setup CoreApps settings.
 Exec=Settings
-Icon=/usr/share/icons/CoreApps/Settings.svg
+Icon=/usr/share/coreapps/icons/Settings.svg
 Type=Application
 Categories=Settings;Core;Qt;
 Terminal=false
