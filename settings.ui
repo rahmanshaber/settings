@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>880</width>
-    <height>722</height>
+    <width>887</width>
+    <height>544</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -127,7 +127,7 @@
      </layout>
     </widget>
    </item>
-   <item row="2" column="1">
+   <item row="3" column="1">
     <widget class="QFrame" name="applyBar">
      <property name="minimumSize">
       <size>
@@ -213,7 +213,7 @@ padding: 3px 10px 3px 10px;
      </layout>
     </widget>
    </item>
-   <item row="0" column="0" rowspan="3">
+   <item row="0" column="0" rowspan="4">
     <widget class="QWidget" name="shortcut" native="true">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -455,7 +455,7 @@ padding: 3px 10px 3px 10px;
      <property name="currentIndex">
       <number>0</number>
      </property>
-     <widget class="QWidget" name="pcorebox">
+     <widget class="QWidget" name="pcoreApps">
       <property name="accessibleName">
        <string>pages</string>
       </property>
@@ -463,747 +463,790 @@ padding: 3px 10px 3px 10px;
        <string notr="true"/>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
-        <widget class="QGroupBox" name="generalb">
-         <property name="title">
-          <string>General</string>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
          </property>
-         <layout class="QGridLayout" name="gridLayout_4">
-          <property name="leftMargin">
-           <number>8</number>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>-161</y>
+            <width>643</width>
+            <height>615</height>
+           </rect>
           </property>
-          <property name="topMargin">
-           <number>20</number>
+          <property name="accessibleName">
+           <string>pages</string>
           </property>
-          <property name="rightMargin">
-           <number>8</number>
-          </property>
-          <property name="bottomMargin">
-           <number>8</number>
-          </property>
-          <property name="horizontalSpacing">
-           <number>8</number>
-          </property>
-          <item row="0" column="2">
-           <widget class="QCheckBox" name="isMaximized">
-            <property name="maximumSize">
-             <size>
-              <width>35</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>11</pointsize>
-             </font>
-            </property>
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>40</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="checked">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QLabel" name="label_3">
-            <property name="text">
-             <string>Open as maximized at startup</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QCheckBox" name="isRecentDisable">
-            <property name="maximumSize">
-             <size>
-              <width>35</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>40</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" colspan="2">
-           <widget class="QLabel" name="label_9">
-            <property name="text">
-             <string>Disable Recent Activities in Start</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QGroupBox" name="generalb">
+             <property name="title">
+              <string>General</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="horizontalSpacing">
+               <number>8</number>
+              </property>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="isMaximized">
+                <property name="maximumSize">
+                 <size>
+                  <width>35</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Open as maximized at startup</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QCheckBox" name="isRecentDisable">
+                <property name="maximumSize">
+                 <size>
+                  <width>35</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Disable Recent Activities in Start</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="lookfeel">
+             <property name="title">
+              <string>Looks and Feel</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <item row="3" column="0">
+               <widget class="QLabel" name="selectFont_3">
+                <property name="text">
+                 <string>Enable Shadow Effect </string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Appearance </string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>227</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="selectFont_2">
+                <property name="text">
+                 <string>Font Style </string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Icon theme </string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>80</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="4">
+               <widget class="QCheckBox" name="addShadow">
+                <property name="maximumSize">
+                 <size>
+                  <width>35</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1" colspan="3">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="3" colspan="2">
+               <widget class="QFontComboBox" name="cmbFontStyle">
+                <property name="editable">
+                 <bool>false</bool>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+                <property name="fontFilters">
+                 <set>QFontComboBox::AllFonts</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3" colspan="2">
+               <widget class="QComboBox" name="cmbStyleTheme">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3" colspan="2">
+               <widget class="QComboBox" name="cmbIconTheme">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="backup">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>Backup and Restore settings</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Select a folder to backup or select a zip to restore</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QToolButton" name="restore">
+                <property name="text">
+                 <string>Restore</string>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextOnly</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="backUp">
+                <property name="text">
+                 <string>Backup</string>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextOnly</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="terminalF">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="title">
+              <string>Preferred Applications</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <item row="2" column="2">
+               <widget class="QComboBox" name="textEditor">
+                <item>
+                 <property name="text">
+                  <string>CorePad</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Atom</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gedit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mousepad</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kate</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kwrite</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gedit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deepin-Editor</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Leafpad</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>L3afpad</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Notepadqq</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pluma</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>File Manager</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QComboBox" name="fileManger">
+                <item>
+                 <property name="text">
+                  <string>CoreFM</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Dolphin</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nemo</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nautilus</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>NewBreeze</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>PcmanFM</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>PcmanFM-qt</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Thunar</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QComboBox" name="terminals">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>CoreTerminal</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Eterm</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gnome-Terminal</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Konsole</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mate-Terminal</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Lxterminal</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Rxvt</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Terminator</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Urxvt</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Uxterm</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Xterm</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Xfce4-Terminal</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Terminal </string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QComboBox" name="imageViewer">
+                <item>
+                 <property name="text">
+                  <string>CoreImage</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Viewnior</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>eom</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>eog</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gwenview</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gpicview</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Lximage-qt</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Ristretto</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Text Editor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>Image Viewer</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" rowspan="4">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::MinimumExpanding</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>300</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="2">
+               <widget class="QComboBox" name="imageEditor">
+                <item>
+                 <property name="text">
+                  <string>CorePaint</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Inkscape</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Krita</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gimp</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>Image Editor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>PDF Viewer</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>Media Palyer</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QComboBox" name="pdfviewer">
+                <item>
+                 <property name="text">
+                  <string>CorePdf</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Okular</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Evince</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Xpdf</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QComboBox" name="mediaPlayer">
+                <item>
+                 <property name="text">
+                  <string>CorePlayer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Baka-Mplayer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deepin-Movie</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gnome-Mplayer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gnome-Mpv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kmplayer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mpv</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Player</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Vlc</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
         </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="lookfeel">
-         <property name="title">
-          <string>Looks and Feel</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_6">
-          <property name="leftMargin">
-           <number>10</number>
-          </property>
-          <property name="topMargin">
-           <number>20</number>
-          </property>
-          <item row="3" column="0">
-           <widget class="QLabel" name="selectFont_3">
-            <property name="text">
-             <string>Enable Shadow Effect </string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_10">
-            <property name="text">
-             <string>Appearance </string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <spacer name="horizontalSpacer_8">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>227</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="selectFont_2">
-            <property name="text">
-             <string>Font Style </string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Icon theme </string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <spacer name="horizontalSpacer_7">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Expanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>80</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="4">
-           <widget class="QCheckBox" name="addShadow">
-            <property name="maximumSize">
-             <size>
-              <width>35</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1" colspan="3">
-           <spacer name="horizontalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="2" column="3" colspan="2">
-           <widget class="QFontComboBox" name="cmbFontStyle">
-            <property name="editable">
-             <bool>false</bool>
-            </property>
-            <property name="frame">
-             <bool>true</bool>
-            </property>
-            <property name="fontFilters">
-             <set>QFontComboBox::AllFonts</set>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3" colspan="2">
-           <widget class="QComboBox" name="cmbStyleTheme">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3" colspan="2">
-           <widget class="QComboBox" name="cmbIconTheme">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="backup">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="title">
-          <string>Backup and Restore settings</string>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
-          <property name="leftMargin">
-           <number>10</number>
-          </property>
-          <property name="topMargin">
-           <number>20</number>
-          </property>
-          <item>
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>Select a folder to backup or select a zip to restore</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QToolButton" name="restore">
-            <property name="text">
-             <string>Restore</string>
-            </property>
-            <property name="toolButtonStyle">
-             <enum>Qt::ToolButtonTextOnly</enum>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="backUp">
-            <property name="text">
-             <string>Backup</string>
-            </property>
-            <property name="toolButtonStyle">
-             <enum>Qt::ToolButtonTextOnly</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="terminalF">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="title">
-          <string>Preferred Applications</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_7">
-          <property name="leftMargin">
-           <number>10</number>
-          </property>
-          <property name="topMargin">
-           <number>20</number>
-          </property>
-          <item row="2" column="2">
-           <widget class="QComboBox" name="textEditor">
-            <item>
-             <property name="text">
-              <string>CorePad</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Atom</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gedit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Mousepad</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kate</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kwrite</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gedit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Deepin-Editor</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Leafpad</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>L3afpad</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Notepadqq</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pluma</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_21">
-            <property name="text">
-             <string>File Manager</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QComboBox" name="fileManger">
-            <item>
-             <property name="text">
-              <string>CoreFM</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Dolphin</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nemo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nautilus</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>NewBreeze</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>PcmanFM</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>PcmanFM-qt</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Thunar</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QComboBox" name="terminals">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="currentIndex">
-             <number>0</number>
-            </property>
-            <property name="frame">
-             <bool>true</bool>
-            </property>
-            <item>
-             <property name="text">
-              <string>CoreTerminal</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Eterm</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gnome-Terminal</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Konsole</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Mate-Terminal</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Lxterminal</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Rxvt</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Terminator</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Urxvt</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Uxterm</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Xterm</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Xfce4-Terminal</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Terminal </string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QComboBox" name="imageViewer">
-            <item>
-             <property name="text">
-              <string>CoreImage</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Viewnior</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>eom</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>eog</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gwenview</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gpicview</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Lximage-qt</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Ristretto</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_22">
-            <property name="text">
-             <string>Text Editor</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_23">
-            <property name="text">
-             <string>Image Viewer</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1" rowspan="4">
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::MinimumExpanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>300</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="4" column="2">
-           <widget class="QComboBox" name="imageEditor">
-            <item>
-             <property name="text">
-              <string>CorePaint</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Inkscape</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Krita</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gimp</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_24">
-            <property name="text">
-             <string>Image Editor</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="label_25">
-            <property name="text">
-             <string>PDF Viewer</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QLabel" name="label_26">
-            <property name="text">
-             <string>Media Palyer</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="2">
-           <widget class="QComboBox" name="pdfviewer">
-            <item>
-             <property name="text">
-              <string>CorePdf</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Okular</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Evince</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Xpdf</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="QComboBox" name="mediaPlayer">
-            <item>
-             <property name="text">
-              <string>CorePlayer</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Baka-Mplayer</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Deepin-Movie</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gnome-Mplayer</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gnome-Mpv</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kmplayer</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Mpv</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Player</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Vlc</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </widget>
@@ -1502,8 +1545,8 @@ padding: 3px 10px 3px 10px;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>284</width>
-            <height>758</height>
+            <width>620</width>
+            <height>744</height>
            </rect>
           </property>
           <property name="accessibleName">
