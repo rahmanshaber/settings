@@ -64,7 +64,7 @@ private slots:
     void on_coreapps_clicked();
     void on_coreaction_clicked();
     void on_corefm_clicked();
-    void on_corescrshot_clicked();
+    void on_coreshot_clicked();
     void on_backUp_clicked();
     void on_restore_clicked();
     void on_setDefaultApp_toggled(bool checked);

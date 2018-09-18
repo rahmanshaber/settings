@@ -408,7 +408,7 @@ padding: 3px 10px 3px 10px;
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="corescrshot">
+       <widget class="QPushButton" name="coreshot">
         <property name="font">
          <font>
           <pointsize>11</pointsize>
@@ -418,7 +418,7 @@ padding: 3px 10px 3px 10px;
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="text">
-         <string>CoreScreenShot</string>
+         <string>CoreShot</string>
         </property>
         <property name="iconSize">
          <size>
@@ -493,9 +493,9 @@ padding: 3px 10px 3px 10px;
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-161</y>
+            <y>0</y>
             <width>643</width>
-            <height>615</height>
+            <height>600</height>
            </rect>
           </property>
           <property name="accessibleName">
@@ -1545,8 +1545,8 @@ padding: 3px 10px 3px 10px;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>620</width>
-            <height>744</height>
+            <width>254</width>
+            <height>734</height>
            </rect>
           </property>
           <property name="accessibleName">

@@ -35,7 +35,9 @@ settings::settings(QWidget *parent) :QWidget(parent),ui(new Ui::settings)
     setupCoreBoxPage();
     setupCoreFMPage();
     setupCoreActionPage();
-    setupCoreShotPage();    
+    setupCoreShotPage();
+
+    on_coreapps_clicked();
 }
 
 settings::~settings()
@@ -423,11 +425,12 @@ void settings::pageClick(QPushButton *btn, int i, QString title)
     btn->setChecked(true);
     ui->selectedsection->setText(title);
     ui->pages->setCurrentIndex(i);
+    this->setWindowTitle(title + " - Settings");
 }
 
 void settings::on_coreapps_clicked()
 {
-    pageClick(ui->coreapps,0, tr("CoreBox"));
+    pageClick(ui->coreapps,0, tr("CoreApps"));
 }
 
 void settings::on_coreaction_clicked()
@@ -440,10 +443,11 @@ void settings::on_corefm_clicked()
     pageClick(ui->corefm,2, tr("CoreFM"));
 }
 
-void settings::on_corescrshot_clicked()
+void settings::on_coreshot_clicked()
 {
-    pageClick(ui->corescrshot,3, tr("CoreScreenShot"));
+    pageClick(ui->coreshot,3, tr("CoreShot"));
 }
+
 
 void settings::on_backUp_clicked()
 {
@@ -516,5 +520,3 @@ void settings::on_setDefaultApp_toggled(bool checked)
     }
 
 }
-
-
