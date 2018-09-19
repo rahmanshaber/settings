@@ -48,7 +48,7 @@ settings::~settings()
 void settings::setupCoreBoxPage()
 {
     // general
-    ui->isRecentDisable->setChecked(sm.getDisableRecent());
+    ui->isRecentDisable->setChecked(sm.getShowRecent());
 
     // looks & feel
     QDirIterator it("/usr/share/icons", QDir::Dirs | QDir::NoDotAndDotDot);
@@ -67,13 +67,13 @@ void settings::setupCoreBoxPage()
     ui->addShadow->setChecked(sm.getAddShadow());
 
     // Preferred Applications
-    ui->terminals->setCurrentText(sm.getTerminal().toLower());
-    ui->fileManger->setCurrentText(sm.getFileManager());
-    ui->textEditor->setCurrentText(sm.getTextEditor());
-    ui->imageViewer->setCurrentText(sm.getImageViewer());
-    ui->imageEditor->setCurrentText(sm.getImageEditor());
-    ui->pdfviewer->setCurrentText(sm.getPDFVierwer());
-    ui->mediaPlayer->setCurrentText(sm.getMediaPlayer());
+    ui->terminals->setText(sm.getTerminal().toLower());
+    ui->fileManger->setText(sm.getFileManager());
+    ui->textEditor->setText(sm.getTextEditor());
+    ui->imageViewer->setText(sm.getImageViewer());
+    ui->imageEditor->setText(sm.getImageEditor());
+    ui->pdfViewer->setText(sm.getPDFVierwer());
+    ui->mediaPlayer->setText(sm.getMediaPlayer());
 }
 
 void settings::setupCoreActionPage()
@@ -342,7 +342,7 @@ void settings::on_cancel_clicked()
 void settings::on_ok_clicked()
 {
     //corebox
-    sm.setDisableRecent(ui->isRecentDisable->isChecked());
+    sm.setShowRecent(ui->isRecentDisable->isChecked());
     if (ui->isRecentDisable->isChecked()) {
         QFile f(QDir::homePath() + "/.config/coreBox/RecentActivity");
         f.remove();
@@ -352,13 +352,13 @@ void settings::on_ok_clicked()
     sm.setStyleMode(ui->cmbStyleTheme->currentIndex() ? true :false );
     sm.setFontStyle(ui->cmbFontStyle->currentText());
     sm.setAddShadow(ui->addShadow->isChecked());
-    sm.setTerminal(ui->terminals->currentText());
-    sm.setTextEditor(ui->textEditor->currentText());
-    sm.setImageViewer(ui->imageViewer->currentText());
-    sm.setFileManager(ui->fileManger->currentText());
-    sm.setImageEditor(ui->imageEditor->currentText());
-    sm.setMediaPlayer(ui->mediaPlayer->currentText());
-    sm.setPDFVierwer(ui->pdfviewer->currentText());
+    sm.setTerminal(ui->terminals->text());
+    sm.setTextEditor(ui->textEditor->text());
+    sm.setImageViewer(ui->imageViewer->text());
+    sm.setFileManager(ui->fileManger->text());
+    sm.setImageEditor(ui->imageEditor->text());
+    sm.setMediaPlayer(ui->mediaPlayer->text());
+    sm.setPDFVierwer(ui->pdfViewer->text());
 
     //corefm
 //    if (ui->setDefaultApp->isChecked()) {
@@ -519,4 +519,81 @@ void settings::on_setDefaultApp_toggled(bool checked)
         ui->mimesWidget->clear();
     }
 
+}
+
+void settings::on_setTerminals_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->terminals->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_setFileManger_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->fileManger->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_setTextEditor_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->textEditor->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_seImageViewer_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->imageViewer->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_setImageEditor_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->imageEditor->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_setPdfViewer_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->pdfViewer->setText(dialog->getCurrentLauncher());
+      }
+    }
+}
+
+void settings::on_setMediaPlayer_clicked()
+{
+    // Select application in the dialog
+    ApplicationDialog *dialog = new ApplicationDialog(this);
+    if (dialog->exec()) {
+      if (dialog->getCurrentLauncher().compare("") != 0) {
+          ui->mediaPlayer->setText(dialog->getCurrentLauncher());
+      }
+    }
 }

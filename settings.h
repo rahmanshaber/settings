@@ -33,6 +33,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 //#include "corearchiver/corearchiver.h"
 #include <cprime/utilities.h>
 #include <cprime/settingsmanage.h>
+#include <cprime/globalfunctions.h>
 
 
 namespace Ui {
@@ -68,6 +69,20 @@ private slots:
     void on_backUp_clicked();
     void on_restore_clicked();
     void on_setDefaultApp_toggled(bool checked);
+
+    void on_setTerminals_clicked();
+
+    void on_setFileManger_clicked();
+
+    void on_setTextEditor_clicked();
+
+    void on_seImageViewer_clicked();
+
+    void on_setImageEditor_clicked();
+
+    void on_setPdfViewer_clicked();
+
+    void on_setMediaPlayer_clicked();
 
 private:
     Ui::settings *ui;

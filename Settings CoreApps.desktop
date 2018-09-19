@@ -4,6 +4,6 @@ Comment=Settings is for setup CoreApps settings.
 Exec=Settings
 Icon=/usr/share/coreapps/icons/Settings.svg
 Type=Application
-Categories=Settings;Core;Qt;
+Categories=Settings;Qt;Utility;
 Terminal=false
 StartupNotify=true

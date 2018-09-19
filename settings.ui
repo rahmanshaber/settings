@@ -453,7 +453,7 @@ padding: 3px 10px 3px 10px;
    <item row="1" column="1">
     <widget class="QStackedWidget" name="pages">
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="pcoreApps">
       <property name="accessibleName">
@@ -493,7 +493,7 @@ padding: 3px 10px 3px 10px;
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
+            <y>-146</y>
             <width>643</width>
             <height>600</height>
            </rect>
@@ -591,7 +591,7 @@ padding: 3px 10px 3px 10px;
               <item row="1" column="0" colspan="2">
                <widget class="QLabel" name="label_9">
                 <property name="text">
-                 <string>Disable Recent Activities in Start</string>
+                 <string>Show Recent Activities in Start</string>
                 </property>
                </widget>
               </item>
@@ -838,70 +838,6 @@ padding: 3px 10px 3px 10px;
               <property name="topMargin">
                <number>20</number>
               </property>
-              <item row="2" column="2">
-               <widget class="QComboBox" name="textEditor">
-                <item>
-                 <property name="text">
-                  <string>CorePad</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Atom</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gedit</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Mousepad</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Kate</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Kwrite</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gedit</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Deepin-Editor</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Leafpad</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>L3afpad</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Notepadqq</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Pluma</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
               <item row="1" column="0">
                <widget class="QLabel" name="label_21">
                 <property name="text">
@@ -909,175 +845,11 @@ padding: 3px 10px 3px 10px;
                 </property>
                </widget>
               </item>
-              <item row="1" column="2">
-               <widget class="QComboBox" name="fileManger">
-                <item>
-                 <property name="text">
-                  <string>CoreFM</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Dolphin</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Nemo</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Nautilus</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>NewBreeze</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>PcmanFM</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>PcmanFM-qt</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Thunar</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item row="0" column="2">
-               <widget class="QComboBox" name="terminals">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="currentIndex">
-                 <number>0</number>
-                </property>
-                <property name="frame">
-                 <bool>true</bool>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>CoreTerminal</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Eterm</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gnome-Terminal</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Konsole</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Mate-Terminal</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Lxterminal</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Rxvt</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Terminator</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Urxvt</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Uxterm</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Xterm</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Xfce4-Terminal</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
               <item row="0" column="0">
                <widget class="QLabel" name="label">
                 <property name="text">
                  <string>Terminal </string>
                 </property>
-               </widget>
-              </item>
-              <item row="3" column="2">
-               <widget class="QComboBox" name="imageViewer">
-                <item>
-                 <property name="text">
-                  <string>CoreImage</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Viewnior</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>eom</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>eog</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gwenview</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gpicview</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Lximage-qt</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Ristretto</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item row="2" column="0">
@@ -1110,30 +882,6 @@ padding: 3px 10px 3px 10px;
                 </property>
                </spacer>
               </item>
-              <item row="4" column="2">
-               <widget class="QComboBox" name="imageEditor">
-                <item>
-                 <property name="text">
-                  <string>CorePaint</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Inkscape</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Krita</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gimp</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
               <item row="4" column="0">
                <widget class="QLabel" name="label_24">
                 <property name="text">
@@ -1155,77 +903,92 @@ padding: 3px 10px 3px 10px;
                 </property>
                </widget>
               </item>
-              <item row="5" column="2">
-               <widget class="QComboBox" name="pdfviewer">
-                <item>
-                 <property name="text">
-                  <string>CorePdf</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Okular</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Evince</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Xpdf</string>
-                 </property>
-                </item>
-               </widget>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="fileManger"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="terminals"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="imageViewer"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="textEditor"/>
               </item>
               <item row="6" column="2">
-               <widget class="QComboBox" name="mediaPlayer">
-                <item>
-                 <property name="text">
-                  <string>CorePlayer</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Baka-Mplayer</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Deepin-Movie</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gnome-Mplayer</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Gnome-Mpv</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Kmplayer</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Mpv</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Player</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Vlc</string>
-                 </property>
-                </item>
+               <widget class="QLineEdit" name="mediaPlayer"/>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLineEdit" name="pdfViewer"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLineEdit" name="imageEditor"/>
+              </item>
+              <item row="0" column="3">
+               <widget class="QToolButton" name="setTerminals">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QToolButton" name="setFileManger">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QToolButton" name="setTextEditor">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="QToolButton" name="seImageViewer">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="QToolButton" name="setImageEditor">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="3">
+               <widget class="QToolButton" name="setPdfViewer">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="3">
+               <widget class="QToolButton" name="setMediaPlayer">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>...</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -1545,7 +1308,7 @@ padding: 3px 10px 3px 10px;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>254</width>
+            <width>627</width>
             <height>734</height>
            </rect>
           </property>
@@ -1993,7 +1756,14 @@ padding: 3px 10px 3px 10px;
            </spacer>
           </item>
           <item>
-           <widget class="QLineEdit" name="ssLocation"/>
+           <widget class="QLineEdit" name="ssLocation">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QToolButton" name="browseS">
@@ -2005,8 +1775,8 @@ padding: 3px 10px 3px 10px;
             </property>
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>0</width>
+              <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
