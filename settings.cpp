@@ -23,6 +23,7 @@ settings::settings(QWidget *parent) :QWidget(parent),ui(new Ui::settings)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
+    //qDebug() << Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle);
     setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle));
 
     // set window size
@@ -67,7 +68,7 @@ void settings::setupCoreBoxPage()
     ui->addShadow->setChecked(sm.getAddShadow());
 
     // Preferred Applications
-    ui->terminals->setText(sm.getTerminal().toLower());
+    ui->terminals->setText(sm.getTerminal());
     ui->fileManger->setText(sm.getFileManager());
     ui->textEditor->setText(sm.getTextEditor());
     ui->imageViewer->setText(sm.getImageViewer());
@@ -336,7 +337,7 @@ void settings::moveAppAssocDown()
 void settings::on_cancel_clicked()
 {
     close();
-    deleteLater();
+    //deleteLater();
 }
 
 void settings::on_ok_clicked()

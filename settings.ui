@@ -453,7 +453,7 @@ padding: 3px 10px 3px 10px;
    <item row="1" column="1">
     <widget class="QStackedWidget" name="pages">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="pcoreApps">
       <property name="accessibleName">
@@ -493,9 +493,9 @@ padding: 3px 10px 3px 10px;
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-146</y>
+            <y>0</y>
             <width>643</width>
-            <height>600</height>
+            <height>649</height>
            </rect>
           </property>
           <property name="accessibleName">
@@ -1308,8 +1308,8 @@ padding: 3px 10px 3px 10px;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>627</width>
-            <height>734</height>
+            <width>277</width>
+            <height>772</height>
            </rect>
           </property>
           <property name="accessibleName">
