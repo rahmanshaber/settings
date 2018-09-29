@@ -23,7 +23,6 @@ settings::settings(QWidget *parent) :QWidget(parent),ui(new Ui::settings)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    //qDebug() << Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle);
     setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle));
 
     // set window size
@@ -344,12 +343,12 @@ void settings::on_ok_clicked()
 {
     //corebox
     sm.setShowRecent(ui->isRecentDisable->isChecked());
-    if (ui->isRecentDisable->isChecked()) {
+    if (!ui->isRecentDisable->isChecked()) {
         QFile f(QDir::homePath() + "/.config/coreBox/RecentActivity");
         f.remove();
     }
     sm.setThemeName(ui->cmbIconTheme->currentText());qDebug()<< ui->cmbIconTheme->currentText();
-    if(ui->isRecentDisable->isChecked() == false){sm.cSetting->remove("Recent");};
+    if(ui->isRecentDisable->isChecked() == false){sm.cSetting->remove("Recent-Disable");};
     sm.setStyleMode(ui->cmbStyleTheme->currentIndex() ? true :false );
     sm.setFontStyle(ui->cmbFontStyle->currentText());
     sm.setAddShadow(ui->addShadow->isChecked());
@@ -448,7 +447,6 @@ void settings::on_coreshot_clicked()
 {
     pageClick(ui->coreshot,3, tr("CoreShot"));
 }
-
 
 void settings::on_backUp_clicked()
 {

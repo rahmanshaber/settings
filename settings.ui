@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="icons.qrc">
-    <normaloff>:/icons/Settings.svg</normaloff>:/icons/Settings.svg</iconset>
+    <normaloff>:/icons/settings.svg</normaloff>:/icons/settings.svg</iconset>
   </property>
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
@@ -276,7 +276,7 @@ padding: 3px 10px 3px 10px;
         </property>
         <property name="icon">
          <iconset resource="icons.qrc">
-          <normaloff>:/icons/Settings.svg</normaloff>:/icons/Settings.svg</iconset>
+          <normaloff>:/icons/settings.svg</normaloff>:/icons/settings.svg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -495,7 +495,7 @@ padding: 3px 10px 3px 10px;
             <x>0</x>
             <y>0</y>
             <width>643</width>
-            <height>649</height>
+            <height>600</height>
            </rect>
           </property>
           <property name="accessibleName">
@@ -1308,8 +1308,8 @@ padding: 3px 10px 3px 10px;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>277</width>
-            <height>772</height>
+            <width>254</width>
+            <height>734</height>
            </rect>
           </property>
           <property name="accessibleName">

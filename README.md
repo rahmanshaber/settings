@@ -1,7 +1,7 @@
 # Settings
 An app of CoreApps family.Settings is for setup CoreApps settings.
 
-<img src="Settings.png" width="500">
+<img src="settings.png" width="500">
 
 ### Download
 

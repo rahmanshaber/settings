@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Settings CoreApps
+Comment=Settings is for setup CoreApps settings.
+Exec=Settings
+Icon=/usr/share/coreapps/icons/settings.svg
+Type=Application
+Categories=Settings;Qt;Utility;
+Terminal=false
+StartupNotify=true

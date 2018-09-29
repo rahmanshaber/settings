@@ -54,10 +54,10 @@ unix {
         target.path = $$BINDIR
 
         desktop.path = $$PREFIX/share/applications/
-        desktop.files = "Settings CoreApps.desktop"
+        desktop.files = "settings coreapps.desktop"
 
         icons.path = $$PREFIX/share/coreapps/icons/
-        icons.files = icons/Settings.svg
+        icons.files = icons/settings.svg
 
         INSTALLS += target icons desktop
 }
