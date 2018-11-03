@@ -31,9 +31,9 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 //#include "corefm/mimeutils.h"
 //#include "applicationdialog.h"
 //#include "corearchiver/corearchiver.h"
-#include <cprime/utilities.h>
+#include <cprime/themefunc.h>
 #include <cprime/settingsmanage.h>
-#include <cprime/globalfunctions.h>
+#include <cprime/appopenfunc.h>
 
 
 namespace Ui {

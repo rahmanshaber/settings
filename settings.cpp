@@ -23,11 +23,11 @@ settings::settings(QWidget *parent) :QWidget(parent),ui(new Ui::settings)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::SettingsStyle));
+    setStyleSheet(CPrime::ThemeFunc::getStyleSheetFileContent(CPrime::StyleTypeName::SettingsStyle));
 
     // set window size
-    int x = static_cast<int>(Utilities::screensize().width()  * .8);
-    int y = static_cast<int>(Utilities::screensize().height()  * .7);
+    int x = static_cast<int>(CPrime::InfoFunc::screenSize().width()  * .8);
+    int y = static_cast<int>(CPrime::InfoFunc::screenSize().height()  * .7);
     this->resize(x, y);
 
     on_setDefaultApp_toggled(false);
@@ -403,7 +403,7 @@ void settings::on_ok_clicked()
 
     //inform the user
     // Function from utilities.cpp
-    Utilities::messageEngine("Settings Applied\nCoreBox needs to restart", Utilities::MessageType::Info);
+    CPrime::InfoFunc::messageEngine("Settings Applied\nCoreBox needs to restart", CPrime::MessageType::Info,this);
     QIcon::setThemeName(sm.getThemeName());
 }
 
@@ -461,7 +461,7 @@ void settings::on_backUp_clicked()
 //    arc->compress(QStringList() << backupFilePath , cPath);
 
     // Function from utilities.cpp
-    Utilities::messageEngine("Backup for settings successfully done.", Utilities::MessageType::Info);
+    CPrime::InfoFunc::messageEngine("Backup for settings successfully done.", CPrime::MessageType::Info,this);
 }
 
 void settings::on_restore_clicked()
@@ -484,7 +484,7 @@ void settings::on_restore_clicked()
                 QString msg = QString("There are old settings file\nDo you want to delete them?");
                 QMessageBox message(QMessageBox::Question, "File Exists", msg, QMessageBox::Yes | QMessageBox::No, this);
                 message.setWindowIcon(QIcon(":/app/icons/app-icons/CoreRenemer.svg"));
-                message.setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::DialogStyle));
+                message.setStyleSheet(CPrime::ThemeFunc::getStyleSheetFileContent(CPrime::StyleTypeName::DialogStyle));
 
                 int reply = message.exec();
 
@@ -496,13 +496,13 @@ void settings::on_restore_clicked()
 //                        corearchiver *arc = new corearchiver;
 //                        arc->extract(path, QDir(QDir::homePath() + "/.config/"));
                         // Function from utilities.cpp
-                        Utilities::messageEngine("Backup for settings successfully done.", Utilities::MessageType::Info);
+                        CPrime::InfoFunc::messageEngine("Backup for settings successfully done.", CPrime::MessageType::Info,this);
                     }
                 }
             }
         } else {
             // Function from utilities.cpp
-            Utilities::messageEngine("Wrong file selected!!!", Utilities::MessageType::Warning);
+            CPrime::InfoFunc::messageEngine("Wrong file selected!!!", CPrime::MessageType::Warning,this);
         }
     }
 }
